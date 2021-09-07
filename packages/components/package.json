@@ -1,0 +1,16 @@
+{
+	  "name": "@ubiquitous/components",
+	  "version": "1.0.0",
+	  "description": "",
+	  "main": "src/index.tsx",
+	  "scripts": {
+	    "clean": "rm -rf node_modules",
+	    "dev": "echo \"no dev command for @symmetrical-consensus/components\"",
+	    "build": "echo \"no build command for @symmetrical-consensus/components\"",
+	    "start": "echo \"no start command for @symmetrical-consensus/components\""
+	  },
+	  "keywords": [],
+	  "author": "",
+	  "dependencies": {
+	  }
+}
