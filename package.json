@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "nextjs:dev": "yarn workspace @ubiquitous/nextjs-web3 run dev",
+    "dev": "yarn workspace @ubiquitous/nextjs-web3 run dev",
     "nextjs:build": "yarn workspace @ubiquitous/nextjs-web3 run build",
     "nextjs:export": "yarn workspace @ubiquitous/nextjs-web3 run export",
     "test": "echo \"Error: no test specified\" && exit 1"

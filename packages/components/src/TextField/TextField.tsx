@@ -20,6 +20,7 @@ const TextField: ReactComponent = <T,>(props: TextFieldProps<T>) => {
 	return (
 		<>
 			<input 
+        className="text-center mx-auto my-4 py-1 px-4 rounded shadow"
         name={props.name}
         type={props.inputType} 
         placeholder={props.placeholder} />
