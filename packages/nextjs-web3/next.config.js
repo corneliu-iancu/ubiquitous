@@ -1,4 +1,5 @@
 module.exports = {
+    exportTrailingSlash: true,
     experimental: {
       externalDir: true,
     },
