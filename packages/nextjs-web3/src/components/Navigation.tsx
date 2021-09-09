@@ -21,9 +21,9 @@ export const Navigation = ({ title = SITE_PREFERENCES.SITE_TITLE, items }: Navig
             </div>
             <nav className="flex flex-1 justify-end">
                 <ul className="flex">
-                    { defaultItems.map(i => 
-                    <li>
-                        <Link href={i.toLowerCase()}>
+                    { defaultItems.map((i , key) => 
+                    <li key={key}>
+                        <Link href={'/' + i.toLowerCase()}>
                             {i}
                         </Link>
                     </li>
