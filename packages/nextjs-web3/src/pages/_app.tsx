@@ -6,7 +6,7 @@ import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {
-			TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GTM_CONTAINER });
+		TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GTM_CONTAINER || "" });
 	}, []);
 
 	return <Component {...pageProps} />
