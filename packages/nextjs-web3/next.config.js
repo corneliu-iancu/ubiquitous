@@ -13,7 +13,7 @@ module.exports = {
         return {
           '/': { page: '/' },
           '/account': { page: '/account' },
-          '/account/minted': { page: '/account/minted', query: { title: "Your minted NFT's" } },
+          '/account/minted': { page: '/account/minted'},
           '/account/history': { page: '/account/history' },
           '/account/hidden': { page: '/account/hidden' },
           '/account/favorited': { page: '/account/favorited' },
