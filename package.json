@@ -9,7 +9,9 @@
     "build": "yarn workspace @ubiquitous/nextjs-web3 run build",
     "start": "yarn workspace @ubiquitous/nextjs-web3 run start",
     "export": "yarn workspace @ubiquitous/nextjs-web3 run export -o ../../build/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chain": "yarn workspace @ubiquitous/hardhat run chain",
+    "deploy": "yarn workspace @ubiquitous/hardhat run deploy"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +19,6 @@
     "packages/*"
   ],
   "dependencies": {
+    "ethers": "^5.4.4"
   }
 }

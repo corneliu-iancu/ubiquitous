@@ -15,7 +15,8 @@ export const Navigation = ({ title = SITE_PREFERENCES.SITE_TITLE, items }: Navig
     ];
 
     return (
-        <header className="container-fluid mx-auto flex">
+        /* Black color: #1f1f1f */
+        <header className="container-fluid mx-auto flex border-b border-black h-16 items-center">
             <div> {/* LOGO */}
                 <Link href="/"><a>{ title }</a></Link>
             </div>
@@ -24,7 +25,7 @@ export const Navigation = ({ title = SITE_PREFERENCES.SITE_TITLE, items }: Navig
                     { defaultItems.map((i , key) => 
                     <li key={key}>
                         <Link href={'/' + i.toLowerCase()}>
-                            {i}
+                            <a className="px-4">{i}</a>
                         </Link>
                     </li>
                     )}

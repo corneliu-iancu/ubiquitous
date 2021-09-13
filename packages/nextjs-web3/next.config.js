@@ -25,5 +25,5 @@ module.exports = {
           '/mint': { page: '/mint' },
           '/terms': { page: '/terms' },
         }
-    },
+    }
 };
