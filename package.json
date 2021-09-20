@@ -1,24 +1,22 @@
 {
-  "name": "ubiquitous",
+  "name": "nextjs-ethereum-starter",
   "version": "1.0.0",
-  "description": "eth blockchain nft market",
-  "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "yarn workspace @ubiquitous/nextjs-web3 run dev",
-    "build": "yarn workspace @ubiquitous/nextjs-web3 run build",
-    "start": "yarn workspace @ubiquitous/nextjs-web3 run start",
-    "export": "yarn workspace @ubiquitous/nextjs-web3 run export -o ../../build/",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "chain": "yarn workspace @ubiquitous/hardhat run chain",
-    "deploy": "yarn workspace @ubiquitous/hardhat run deploy"
+    "dev": "yarn workspace nextjs-ethereum-starter-frontend dev",
+    "build": "yarn workspace nextjs-ethereum-starter-frontend build",
+    "start": "yarn workspace nextjs-ethereum-starter-frontend start",
+    "chain": "yarn workspace nextjs-ethereum-starter-hardhat chain",
+    "deploy": "yarn workspace nextjs-ethereum-starter-hardhat deploy",
+    "compile": "yarn workspace nextjs-ethereum-starter-hardhat compile"
   },
-  "author": "",
-  "license": "ISC",
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {
-    "ethers": "^5.4.4"
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/hardhat",
+      "**/hardhat/**"
+    ]
   }
 }
