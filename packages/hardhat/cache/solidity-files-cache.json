@@ -1,113 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\Cornelius\\Documents\\Projects\\scaffold-eth\\packages\\hardhat\\contracts\\Multicall.sol": {
-      "lastModificationDate": 1631882625553,
-      "contentHash": "5735d8cff33070da9f2de91b17e0a584",
-      "sourceName": "contracts/Multicall.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "Multicall"
-      ]
-    },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\scaffold-eth\\packages\\hardhat\\contracts\\YourContract.sol": {
-      "lastModificationDate": 1631882625553,
-      "contentHash": "4186983361df450a9ff161cdab7ea2d9",
-      "sourceName": "contracts/YourContract.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.3"
-      ],
-      "artifacts": [
-        "YourContract"
-      ]
-    },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\scaffold-eth\\packages\\hardhat\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1631882643513,
-      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
-      ]
-    },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\scaffold-eth\\packages\\hardhat\\contracts\\MarketContract.sol": {
-      "lastModificationDate": 1632159483540,
-      "contentHash": "bbe520e647711728f2d87497d69242ad",
+    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/MarketContract.sol": {
+      "lastModificationDate": 1632757440771,
+      "contentHash": "fecd3cd5db51d0d671f67871ea12c0dd",
       "sourceName": "contracts/MarketContract.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -143,84 +39,8 @@
         "MarketContract"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\scaffold-eth\\packages\\hardhat\\contracts\\NftContract.sol": {
-      "lastModificationDate": 1632163597597,
-      "contentHash": "c8533f6b5586b458dd0d27f8fe0df211",
-      "sourceName": "contracts/NftContract.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol",
-        "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
-        "@openzeppelin/contracts/utils/Counters.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.3"
-      ],
-      "artifacts": [
-        "NftContract"
-      ]
-    },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\contracts\\MarketContract.sol": {
-      "lastModificationDate": 1632159483540,
-      "contentHash": "bbe520e647711728f2d87497d69242ad",
-      "sourceName": "contracts/MarketContract.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.3"
-      ],
-      "artifacts": [
-        "Exchange",
-        "HydraExchange",
-        "MarketContract"
-      ]
-    },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1631882643513,
+    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1632757494158,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {
@@ -253,9 +73,9 @@
         "console"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\contracts\\YourContract.sol": {
-      "lastModificationDate": 1632132976042,
-      "contentHash": "4186983361df450a9ff161cdab7ea2d9",
+    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/YourContract.sol": {
+      "lastModificationDate": 1632757440773,
+      "contentHash": "42a5f1c87c611c8ea3f642f42171fb98",
       "sourceName": "contracts/YourContract.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -289,9 +109,9 @@
         "YourContract"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\contracts\\NftContract.sol": {
-      "lastModificationDate": 1632219764517,
-      "contentHash": "08e72ac9a584b57eef93265e0932765d",
+    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/NftContract.sol": {
+      "lastModificationDate": 1632758292774,
+      "contentHash": "a7cc0404d3b470c790cbccdfc2e99af5",
       "sourceName": "contracts/NftContract.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -328,8 +148,8 @@
         "NftContract"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\ERC721URIStorage.sol": {
-      "lastModificationDate": 1632154414201,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1632757519569,
       "contentHash": "94da923c22e9773af388607307182c80",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
       "solcConfig": {
@@ -364,8 +184,44 @@
         "ERC721URIStorage"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\utils\\Counters.sol": {
-      "lastModificationDate": 1632154414159,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1632757519569,
+      "contentHash": "e57b2ff1645fb57408d6f87ee861dcb6",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1632757500716,
       "contentHash": "b7811964d33f23b2d45ed3ebb76a4548",
       "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
       "solcConfig": {
@@ -398,8 +254,8 @@
         "Counters"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol": {
-      "lastModificationDate": 1632154414195,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1632757514435,
       "contentHash": "a4f6dccf3f15b6844e357f737a572388",
       "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
       "solcConfig": {
@@ -440,8 +296,8 @@
         "ERC721"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
-      "lastModificationDate": 1632154414242,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1632757514435,
       "contentHash": "53919d6975f2c0f3dffee5e3a1064116",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
       "solcConfig": {
@@ -476,8 +332,8 @@
         "IERC721"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
-      "lastModificationDate": 1632154414249,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1632757514435,
       "contentHash": "9a367cecca6fed80a3e975b7e6b3bd5c",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
       "solcConfig": {
@@ -510,8 +366,8 @@
         "IERC721Receiver"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Metadata.sol": {
-      "lastModificationDate": 1632154414247,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1632757519569,
       "contentHash": "8aa69ca8424167555baaaa9f607801db",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
       "solcConfig": {
@@ -546,8 +402,8 @@
         "IERC721Metadata"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
-      "lastModificationDate": 1632154414150,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1632757500716,
       "contentHash": "c5f6c4e4df069c789e7d84b4c3011913",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -580,8 +436,8 @@
         "Address"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1632154414158,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1632757500716,
       "contentHash": "851485d5b925529b1a2f34a0be077891",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -614,8 +470,8 @@
         "Context"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
-      "lastModificationDate": 1632154414278,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1632757500719,
       "contentHash": "62142442bed149f965c5ed971fae4182",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
@@ -648,8 +504,8 @@
         "Strings"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
-      "lastModificationDate": 1632154414176,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1632757514439,
       "contentHash": "a9a5319dff9088c6ffe757ea1c2a6729",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
       "solcConfig": {
@@ -684,8 +540,8 @@
         "ERC165"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
-      "lastModificationDate": 1632154414228,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1632757514439,
       "contentHash": "9a04322bb8f6b8f2767d8358d1d2537b",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
       "solcConfig": {
@@ -718,78 +574,8 @@
         "IERC165"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\contracts\\Multicall.sol": {
-      "lastModificationDate": 1632132976041,
-      "contentHash": "5735d8cff33070da9f2de91b17e0a584",
-      "sourceName": "contracts/Multicall.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "Multicall"
-      ]
-    },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Enumerable.sol": {
-      "lastModificationDate": 1632154414245,
-      "contentHash": "e57b2ff1645fb57408d6f87ee861dcb6",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../IERC721.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721Enumerable"
-      ]
-    },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
-      "lastModificationDate": 1632154414264,
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1632757500687,
       "contentHash": "4fe56b59ced59d87df6b796758f62895",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -824,9 +610,9 @@
         "Ownable"
       ]
     },
-    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\contracts\\Wyvern.sol": {
-      "lastModificationDate": 1632236055845,
-      "contentHash": "cb4a5b743363de0cacda5f56d1cd87b2",
+    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/Wyvern.sol": {
+      "lastModificationDate": 1632758292775,
+      "contentHash": "34776d3d66b5c84d70b940e5698fd5a7",
       "sourceName": "contracts/Wyvern.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -859,6 +645,40 @@
       "artifacts": [
         "WyvernBase",
         "WyvernCore"
+      ]
+    },
+    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/Multicall.sol": {
+      "lastModificationDate": 1632757440771,
+      "contentHash": "38fa2af6d6364dbbe6681b830b4f9a61",
+      "sourceName": "contracts/Multicall.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "Multicall"
       ]
     }
   }

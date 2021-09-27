@@ -94,6 +94,16 @@ export const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
                   Signature Example
                 </Link>
               </NextLink>
+              <NextLink href="/mint" passHref>
+                <Link px="4" py="1">
+                  Mint NFTs
+                </Link>
+              </NextLink>
+              <NextLink href="/asset" passHref>
+                <Link px="4" py="1">
+                  Assets
+                </Link>
+              </NextLink>
             </Flex>
             {account ? (
               <Flex

@@ -26,12 +26,13 @@ function NFT(): JSX.Element {
 
     
 
-    useCallback( async () => {
+      useEffect(() => {
         async function loadNFTs() {
             if (!library) {
-                console.log('nu lib')
+                // console.error(' Connection not available.')
                 return
             }
+            // console.log('🐳 >> loading nfts.')
             const contract = new ethers.Contract(
                 CONTRACT_ADDRESS,
                 NftContract.abi,
@@ -39,27 +40,31 @@ function NFT(): JSX.Element {
             ) as NftContractType
                 
             let data = await contract.tokensOfOwner(account)
+
             const items = await Promise.all(data.map(async i => {
                 const tokenUri = await contract.tokenURI(i.toNumber())
-                //console.log('TokenId:', i.toNumber(), tokenUri)
                 const meta = await axios.get(tokenUri)
                 return meta.data;
             }))
             setAssets(items)
         }
         loadNFTs()
-    }, [])
+    }, [library])
 
     return (
         <Layout>
             NFT PAGE
-            <div>
+            <div className="grid grid-cols-3 gap-4">
                 { assets && assets.map((nft, i) => (
-                    <div key={i}>
-                        <p>{ nft.name }</p>
-                        <p>{ nft.description }</p>
-                        <p>{ nft.external_url }</p>
-                        <p>{ nft.image }</p>
+                    <div key={i} className="shadow rounded">
+                        <div>
+                            <img className="object-cover h-48 w-full" src={nft.image} alt="" />
+                        </div>
+                        <footer className="px-4 py-4">
+                            <p className="mb-2"><b>{ nft.name }</b></p>
+                            <p><em>{ nft.description }</em></p>
+                            {/* <p>{ nft.external_url }</p> */}
+                        </footer>
                     </div>
                 ))}
             </div>

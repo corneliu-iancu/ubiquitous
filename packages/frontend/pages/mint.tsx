@@ -100,7 +100,7 @@ function MintNFT(): JSX.Element {
             
             <section className="py-2">
                 <div className="input-file-wrapper">
-                    <div>
+                    <div className="input-file-mask">
                         <header>Drag & drop a file</header>
                         <p>or browse media on yer device</p>
                     </div>

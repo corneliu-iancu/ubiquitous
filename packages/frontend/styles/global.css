@@ -15,10 +15,14 @@
 .input {
     @apply rounded border border-gray-900 px-4;
     min-width: 320px;
+    width: 100%;
 }
 
 .input-file-wrapper {
     position: relative;
+}
+.input-file-mask {
+    @apply rounded border border-gray-900 px-4;
 }
 
 .input-file {
