@@ -7,7 +7,7 @@ import { NftContract as LOCAL_CONTRACT_ADDRESS } from '../artifacts/contracts/co
 import NftContract from '../artifacts/contracts/NftContract.sol/NftContract.json'
 import { NftContract as NftContractType } from '../types/typechain'
 
-import { create } from 'ipfs-http-client'
+import { create, CID } from 'ipfs-http-client'
 
 const client = create({ 
     url: "https://ipfs.infura.io:5001/api/v0"
@@ -25,8 +25,9 @@ const ROPSTEN_CONTRACT_ADDRESS = '0x6b61a52b1EA15f4b8dB186126e980208E1E18864'
 
 function MintNFT(): JSX.Element {
     const { account, chainId, library } = useEthers()
-    const [formInput, updateFormInput] = useState({ name: '', description: '', external_link: '' })
+    const [formInput, updateFormInput] = useState({ name: '', description: '', external_url: '' })
     const [fileUrl, updateFileUrl] = useState('')
+    const [unlockableContent, setUnlockableContent] = useState(false)
 
     const CONTRACT_ADDRESS =
         chainId === ChainId.Ropsten
@@ -51,19 +52,24 @@ function MintNFT(): JSX.Element {
         ) as NftContractType
 
         const metaData = {
-            "description": "Friendly OpenSea Creature that enjoys long swims in the ocean.", 
-            "external_url": "https://openseacreatures.io/3", 
-            "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png", 
-            "name": "Dave Starbelly",
+            "description": formInput.description, // "Friendly OpenSea Creature that enjoys long swims in the ocean.", 
+            "external_url": formInput.external_url ,//"https://openseacreatures.io/3", 
+            "image": fileUrl, //"https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png", 
+            "name": formInput.name, //"Dave Starbelly",
             "attributes": [], 
         }
 
-        const transaction = await contract.createToken(JSON.stringify(metaData))
+        const doc = JSON.stringify(metaData)
+
+        const added = await client.add(doc)
+        const url = `https://ipfs.infura.io/ipfs/${added.path}`
+
+        const transaction = await contract.createToken(url)
         
         let tx = await transaction.wait()
         let event = tx.events[0]
         let value = event.args[2]
-
+        
         console.log("Token:", value.toNumber());
     }
 
@@ -78,51 +84,87 @@ function MintNFT(): JSX.Element {
         }  
     }
 
+    // Temporary form validation untill
+    // we implement formik & yup
+    function isFormValid() {
+        if(!formInput.name || !formInput.description || !fileUrl) {
+            return false
+        }
+
+        return true
+    }
+
     return (
         <Layout>
             <div>Mint nft</div>
             
-            <section>
-                <input 
-                    onChange={ onChange }
-                    type="file" name="Upload your NFT media" />
+            <section className="py-2">
+                <div className="input-file-wrapper">
+                    <div>
+                        <header>Drag & drop a file</header>
+                        <p>or browse media on yer device</p>
+                    </div>
+                    <input 
+                        className="input input-file"
+                        onChange={ onChange }
+                        type="file" name="Upload your NFT media" />
+                </div>
             </section>
 
             {
                 fileUrl && (
-                <section>
+                <section className="py-2">
                     <img src={fileUrl} width="300px" />
                 </section>
                 )
             }
 
-            <section>
+            <section className="py-2">
                 <input 
                     onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
+                    className="input"
                     type="text" name="Item Name" placeholder="Item Name" />
             </section>
 
-            <section>
-                <input type="text" name="External Link" placeholder="External Link" />
+            <section className="py-2">
+                <input 
+                    className="input"
+                    onChange={e => updateFormInput({ ...formInput, external_url: e.target.value })}
+                    type="text" name="External Link" placeholder="External Link" />
             </section>
 
-            <section>
-                <textarea name="description" placeholder="Provide a detailed description of your item." rows={4}></textarea>
+            <section className="py-2">
+                <textarea 
+                    className="input"
+                    onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
+                    name="description" placeholder="Provide a detailed description of your item." rows={4}></textarea>
             </section>
 
-            <section>
+            <section className="py-2">
                 <label htmlFor="unlockable-content">Unlockable Content</label>
-                <input type="checkbox" id="unlockable-content" name="Unlockable Content" />
-                <div><textarea rows={4} /></div>
+                <input 
+                    onChange={ e => setUnlockableContent(e.target.checked) }
+                    type="checkbox" id="unlockable-content" name="Unlockable Content" />
+                {unlockableContent && (
+                    <div>
+                        <textarea
+                            className="input"
+                            name="Unlockable Content"
+                            placeholder="Enter content (access keys, promo codes, link to files, etc."
+                            rows={4} />
+                    </div>
+                )}
             </section>
 
-            <section>
+            <section className="py-2">
                 <label htmlFor="sensitive-content">Sensitive Content</label>
                 <input type="checkbox" id="sensitive-content" name="Sensitive Content" />
             </section>
 
-            <button onClick={() => mintNft()} className="btn border">
-                Mint.
+            <button onClick={() => mintNft()} 
+                disabled={!isFormValid()}
+                className="btn">
+                Mint
             </button>
         </Layout>
     )

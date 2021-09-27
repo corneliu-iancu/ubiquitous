@@ -13,6 +13,10 @@ import * as Contracts from ".";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
+      name: "Ownable",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Ownable__factory>;
+    getContractFactory(
       name: "ERC721",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ERC721__factory>;
@@ -20,6 +24,10 @@ declare module "hardhat/types/runtime" {
       name: "ERC721URIStorage",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ERC721URIStorage__factory>;
+    getContractFactory(
+      name: "IERC721Enumerable",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IERC721Enumerable__factory>;
     getContractFactory(
       name: "IERC721Metadata",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -52,6 +60,14 @@ declare module "hardhat/types/runtime" {
       name: "NftContract",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.NftContract__factory>;
+    getContractFactory(
+      name: "WyvernBase",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.WyvernBase__factory>;
+    getContractFactory(
+      name: "WyvernCore",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.WyvernCore__factory>;
     getContractFactory(
       name: "YourContract",
       signerOrOptions?: ethers.Signer | FactoryOptions

@@ -1,0 +1,32 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply font-bold py-2 px-4 rounded border border-gray-900;
+    min-width: 320px;
+}
+
+.btn:disabled {
+    opacity: .5;
+}
+
+.input {
+    @apply rounded border border-gray-900 px-4;
+    min-width: 320px;
+}
+
+.input-file-wrapper {
+    position: relative;
+}
+
+.input-file {
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}

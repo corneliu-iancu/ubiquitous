@@ -290,8 +290,8 @@
       ]
     },
     "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\contracts\\NftContract.sol": {
-      "lastModificationDate": 1632167095512,
-      "contentHash": "4b6badeda632607e2e273e54f429e571",
+      "lastModificationDate": 1632219764517,
+      "contentHash": "08e72ac9a584b57eef93265e0932765d",
       "sourceName": "contracts/NftContract.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -318,6 +318,7 @@
       "imports": [
         "hardhat/console.sol",
         "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+        "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
         "@openzeppelin/contracts/utils/Counters.sol"
       ],
       "versionPragmas": [
@@ -749,6 +750,115 @@
       ],
       "artifacts": [
         "Multicall"
+      ]
+    },
+    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Enumerable.sol": {
+      "lastModificationDate": 1632154414245,
+      "contentHash": "e57b2ff1645fb57408d6f87ee861dcb6",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1632154414264,
+      "contentHash": "4fe56b59ced59d87df6b796758f62895",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\Cornelius\\Documents\\Projects\\ubiquitous\\packages\\hardhat\\contracts\\Wyvern.sol": {
+      "lastModificationDate": 1632236055845,
+      "contentHash": "cb4a5b743363de0cacda5f56d1cd87b2",
+      "sourceName": "contracts/Wyvern.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.3"
+      ],
+      "artifacts": [
+        "WyvernBase",
+        "WyvernCore"
       ]
     }
   }

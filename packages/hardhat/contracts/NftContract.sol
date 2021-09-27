@@ -3,9 +3,10 @@ pragma solidity ^0.8.3;
 
 import "hardhat/console.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract NftContract is ERC721URIStorage  {
+contract NftContract is ERC721URIStorage {
     
     /// @dev Transfer event as defined in current draft of ERC721. Emitted every time a nft
     ///  ownership is assigned
