@@ -34,7 +34,7 @@ contract NftContract is ERC721URIStorage {
 
         nftIndexToOwner[newItemId] = msg.sender;
 
-        //_transfer(0, msg.sender, newItemId);
+        // _transfer(0, msg.sender, newItemId);
 
         return newItemId;
     }

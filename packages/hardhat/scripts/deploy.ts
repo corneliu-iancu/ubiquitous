@@ -32,11 +32,11 @@ async function main() {
   console.log('NftContract deployed to:', nftContract.address);
 
   // We get the contract to deploy
-  const MarketContract = await ethers.getContractFactory('MarketContract');
-  const marketContract = await MarketContract.deploy();
-  await marketContract.deployed();
-  saveFrontendFiles(marketContract, "MarketContract");
-  console.log('MarketContract deployed to:', marketContract.address);
+  const Exchange = await ethers.getContractFactory('HydraExchange');
+  const exchange = await Exchange.deploy();
+  await exchange.deployed();
+  saveFrontendFiles(exchange, "HydraExchange");
+  console.log('Exchange deployed to:', exchange.address);
 
   const MulticallContract = await ethers.getContractFactory('Multicall');
   const multicallContract = await MulticallContract.deploy();

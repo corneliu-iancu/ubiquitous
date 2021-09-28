@@ -1,44 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/MarketContract.sol": {
-      "lastModificationDate": 1632757440771,
-      "contentHash": "fecd3cd5db51d0d671f67871ea12c0dd",
-      "sourceName": "contracts/MarketContract.sol",
-      "solcConfig": {
-        "version": "0.8.3",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.3"
-      ],
-      "artifacts": [
-        "Exchange",
-        "HydraExchange",
-        "MarketContract"
-      ]
-    },
     "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/node_modules/hardhat/console.sol": {
       "lastModificationDate": 1632757494158,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
@@ -110,8 +72,8 @@
       ]
     },
     "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/NftContract.sol": {
-      "lastModificationDate": 1632758292774,
-      "contentHash": "a7cc0404d3b470c790cbccdfc2e99af5",
+      "lastModificationDate": 1632811529334,
+      "contentHash": "959af0534830e662a1e94945f74fbae1",
       "sourceName": "contracts/NftContract.sol",
       "solcConfig": {
         "version": "0.8.3",
@@ -679,6 +641,80 @@
       ],
       "artifacts": [
         "Multicall"
+      ]
+    },
+    "/Users/developer/Documents/Projects/ubiquitous/packages/hardhat/contracts/Exchange.sol": {
+      "lastModificationDate": 1632851803647,
+      "contentHash": "1346b94d41c92f86ad016a967425687f",
+      "sourceName": "contracts/Exchange.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Counters.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.3"
+      ],
+      "artifacts": [
+        "Exchange",
+        "HydraExchange"
+      ]
+    },
+    "/Users/developer/Documents/Projects/ubiquitous/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1632757500712,
+      "contentHash": "53fbff678f378956efcb207fa748eaa6",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
       ]
     }
   }
